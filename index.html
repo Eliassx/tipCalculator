@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <main class="container">
+    <div class="div-title">
+      <h1 class="title">Spli <br> tter</h1>
+    </div>
+
+    <section class="main">
+      <div class="interacion">
+        <div class="insert-valor">
+          <label for="valor">Bill</label>
+          <input type="number" name="price" id="price" placeholder="0">
+        </div>
+
+        <div class="select-tip">
+          <div class="select-title">
+            <p>Select Tip %</p>
+          </div>
+
+          <div class="select-button">
+            <button type="button" class="button" id="button">5%</button>
+            <button type="button" class="button" id="button2">10%</button>
+            <button type="button" class="button" id="button3">15%</button>
+            <button type="button" class="button" id="button4">25%</button>
+            <button type="button" class="button" id="button5">50%</button>
+            <input type="number" number="buttonValor" id="buttonValor" placeholder="Custom">
+          </div>
+        </div>
+
+        <div class="people-number">
+          <label for="peopleNumber">Number of People</label>
+          <input type="number" name="people" id="peopleNumber" placeholder="0">
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="result-total">
+          <div class="amount">
+            <div class="amount-title">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="amount-valor">
+              <p id="result-amount">$0.00</p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="total-title">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="total-valor">
+              <p id="result-valor">$0.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="div-button">
+          <button type="button" id="button-reset">Reset</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
